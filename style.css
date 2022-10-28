@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lateef', serif;
+}
+.header{
+  min-height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/ITMUSEUM.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.nav{
+  display: flex;
+  padding: 20% 30%;
+  justify-content: center;
+  align-items: center;
+}
+/*----- logo size -----*/
+nav img{
+  width: 170px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.text-box{
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 40px;
+  color: #777;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.text-box p{
+  margin: 10px 0;
+  font-size: 38px;
+  color: #777;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #777;
+  border: 1px solid rgb(0 0 0 / 20%);
+  padding: 5px 20px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.hero-btn:hover{
+  border: 1px solid #D3D3D3;
+  background: #D3D3D3;
+  transition: 1s;
+}
+@media(max-width: 700px){
+  .text-box h1{
+    font-size: 40px;
+  }
+
+}
+
+/*----- COURSE -----*/
+.slide{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background-image: url(images/bg.png);
+}
+.slide p{
+  color: #777;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 20px;
+}
+.slide h1 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.slide img{
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.slide-col{
+  flex-basis: 31%;
+  background: #F4ECF7;
+  border-radius: 10px;
+  margin: 5% 2%;
+  padding: 21px 15px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.slide-col p{
+  font-size: 28px;
+  text-align: center;
+  font-weight: 300;
+  margin: 10px 0;
+  color: #777;
+}
+.slide h3{
+  font-size: 33px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #C39BD3;
+}
+.slide-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
+  }
+}
+
+
+/*----- campus -----*/
+.campus{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-image: url(images/bg.png);
+}
+.campus h1 {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.campus p{
+  color: #777;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 20px;
+  padding-bottom: 5px;
+}
+.campus-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin: 5% 2%;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+.layer{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgb(230, 230, 250);
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+
+/*----- footer -----*/
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background: #F8F8FF;
+  color: #f44336;
+}
+.footer h1{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer p{
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+  padding: 0px 100px;
+  color: #777;
+  margin: 0 5%;
+}
+.icons .fa{
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart-o{
+  color: #f44336;
+}
